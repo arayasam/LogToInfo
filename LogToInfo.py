@@ -1,4 +1,15 @@
 import re
+import sys
+import os
+
+# Information about iteration over files in a  given directory if directory is passed as argument to program. .
+# for filename in os.listdir(sys.argv[1]):
+#     if filename.endswith(".log"):
+#         # print(os.path.join(directory, filename))
+#         continue
+#     else:
+#         continue
+
 
 def logToInfo(logFile):
     """
@@ -22,7 +33,7 @@ def logToInfo(logFile):
     EFReturn_ExecuteRequests=[]     #Inprogress
     ExtOnlyPrint_ExecuteRequests=None
     PartialPrint_ExecuteRequests=None
-    StandardPrint_ExecuteRequests=None
+    StandardPrint_ExecuteRequests=[]
     SubClientPackagePrint_ExecuteRequests=None
     TViewSyncRequestHandler_ProcessRequest=None
     COEViewSync_ReloadAfterCalc=None
@@ -40,7 +51,7 @@ def logToInfo(logFile):
     FCalc_CalculateVariables=['ColumnName=FCalc.Calculate', 'ElapseTime(ms)=']
     EFRequest_ERequestsVariables=['ColumnName=EFRequest.ExecuteRequests', 'ElapseTime(ms)=']
     EFReturn_ERequestsVariables=['ColumnName=EFReturn.ExecuteRequests', 'ElapseTime(ms)='] # NEED TO CHECK WITH EDDIE. INPROGRESS.
-
+    StandardPrint_ERequestsVariables=['ColumnName=StandardPrint.ExecuteRequests', 'ElapseTime(ms)=']
 
     with open(logFile,'r') as logReader:
         # Will have to change the following two variables if number of clients change.
@@ -59,7 +70,7 @@ def logToInfo(logFile):
                 Iteration.append(int(re.findall('\d+', parts[parts.__len__() - 2])[0]))
                 ClientIterations.append(int(re.findall('\d+', parts[parts.__len__()-1] )[0]))
                 NumOfIterations+=1
-#        print(NumOfIterations,ClientIterations,Iteration)
+        # print(NumOfIterations,ClientIterations,Iteration)
 
 
             # Gives out a list of n sublists where each sublist contains the RequestType and its runtime. N is the number of iterations
@@ -88,12 +99,19 @@ def logToInfo(logFile):
 
 
             # Gives out a list of EFRequest_ExecuteRequests value/runtime per iteration.
-            # Output: EFRequest_ExecuteRequests
+            # Output: EFRequest_ExecuteRequests. N Values
             if all(word in line for word in EFRequest_ERequestsVariables):
                 parts = line.split()
                 EFRequest_ExecuteRequests.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
         # print(EFRequest_ExecuteRequests)
 
+
+            # Gives out a list of StandardPrint_ExecuteRequests value/runtime per iteration.
+            # Output: StandardPrint_ExecuteRequests[]. N values
+            if all(word in line for word in StandardPrint_ERequestsVariables):
+                parts = line.split()
+                StandardPrint_ExecuteRequests.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
+        # print(StandardPrint_ExecuteRequests)
 
 
 #******************************************Not yet tested below section************************************************
@@ -118,4 +136,4 @@ def logToInfo(logFile):
         # print(ClientName, TotalClientRunTime)
 
 
-logToInfo("logFileDoe.log")
+logToInfo("LogFileDOEPrint.log")
