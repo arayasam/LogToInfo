@@ -26,24 +26,26 @@ def logToInfo(logFile):
     ClientName=None  #Done
     ClientIterations=[]       #Done
     RequestType=[]       #Done
-    ProcessOutputReqTime = None     # column name is ProcessOutputRequest      # Done
+    ProcessOutputReqTime = None   #Done  # column name is ProcessOutputRequest
     FEngine_CreateCalcOutput=[]   #Done
     FCalc_Calculate=[]            #Done
     EFRequest_ExecuteRequests=[] #Done
     EFReturn_ExecuteRequests=[]     #Inprogress
     ExtOnlyPrint_ExecuteRequests=None
     PartialPrint_ExecuteRequests=None
-    StandardPrint_ExecuteRequests=[]
+    StandardPrint_ExecuteRequests=[]        # Done
     SubClientPackagePrint_ExecuteRequests=None
-    TViewSyncRequestHandler_ProcessRequest=None
-    COEViewSync_ReloadAfterCalc=None
+    TViewSyncRequestHandler_ProcessRequest=[]
+    COEViewSync_ReloadAfterCalc=[]
     ClientNameAndTotalRunTime = []
 
     # ColumnName=FEngine.CreateCalcOutput;
     # ElapseTime(ms)=0;
 
+    # ColumnName=TViewSyncRequestHandler.ProcessRequest; ElapseTime(ms)=
+    # COEViewSync.ReloadAfterCalc
 
-    #matching lines based on words in the line.
+    #matching lines based on patterns/substrings in the line.
     totalTimeVariables=['ColumnName=ClientIterations','Iteration','ElapseTime']
     ClientNameVariables=['ColumnName=Client', 'ClientName']
     ReqTypeAndPORVariables=['ColumnName=ProcessOutputRequest','ElapseTime(ms)=']
@@ -52,6 +54,11 @@ def logToInfo(logFile):
     EFRequest_ERequestsVariables=['ColumnName=EFRequest.ExecuteRequests', 'ElapseTime(ms)=']
     EFReturn_ERequestsVariables=['ColumnName=EFReturn.ExecuteRequests', 'ElapseTime(ms)='] # NEED TO CHECK WITH EDDIE. INPROGRESS.
     StandardPrint_ERequestsVariables=['ColumnName=StandardPrint.ExecuteRequests', 'ElapseTime(ms)=']
+    COEViewSync_RACVariables=['ColumnName=COEViewSync.ReloadAfterCalc', 'ElapseTime(ms)=']
+    TViewSyncRequestHandler_PRVariables = ['ColumnName=TViewSyncRequestHandler.ProcessRequest', 'ElapseTime(ms)=']
+    ExtOnlyPrint_ERequestsVariables = ['ColumnName=ExtOnlyPrint.ExecuteRequests', 'ElapseTime(ms)=']
+    PartialPrint_ERequestsVariables = ['ColumnName=PartialPrint.ExecuteRequests', 'ElapseTime(ms)=']
+    SubClientPackagePrint_ERequestsVariables = ['ColumnName=SubClientPackagePrint.ExecuteRequests', 'ElapseTime(ms)=']
 
     with open(logFile,'r') as logReader:
         # Will have to change the following two variables if number of clients change.
@@ -113,17 +120,54 @@ def logToInfo(logFile):
                 StandardPrint_ExecuteRequests.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
         # print(StandardPrint_ExecuteRequests)
 
+#*************************Not yet tested above section************************************************************
 
-#******************************************Not yet tested below section************************************************
+            # Gives out a list of ExtOnlyPrint_ExecuteRequests value/runtime per iteration.
+            # Output: ExtOnlyPrint_ExecuteRequests[]. N values
+            if all(word in line for word in ExtOnlyPrint_ERequestsVariables):
+                parts = line.split()
+                ExtOnlyPrint_ExecuteRequests.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
+        # print(ExtOnlyPrint_ExecuteRequests)
+
+            # Gives out a list of PartialPrint_ExecuteRequests value/runtime per iteration.
+            # Output: PartialPrint_ExecuteRequests[]. N values
+            if all(word in line for word in PartialPrint_ERequestsVariables):
+                parts = line.split()
+                PartialPrint_ExecuteRequests.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
+        # print(PartialPrint_ExecuteRequests)
+
+            # Gives out a list of SubClientPackagePrint_ExecuteRequests value/runtime per iteration.
+            # Output: SubClientPackagePrint_ExecuteRequests[]. N values
+            if all(word in line for word in SubClientPackagePrint_ERequestsVariables):
+                parts = line.split()
+                SubClientPackagePrint_ExecuteRequests.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
+        # print(SubClientPackagePrint_ExecuteRequests)
+
 
             # Gives out a list of EFReturn_ExecuteRequests value/runtime per iteration.
-            # Output: EFReturn_ExecuteRequests
+            # Output: EFReturn_ExecuteRequests[]. N values
             if all(word in line for word in EFReturn_ERequestsVariables):
                 parts = line.split()
                 EFReturn_ExecuteRequests.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
         # print(EFReturn_ExecuteRequests)
 
-# ******************************************Not yet tested above section***********************************************
+#*********************************Not yet tested above section********************************************************
+
+            # Gives out a list of COEViewSync_ReloadAfterCalc value/runtime per iteration.
+            # Output: COEViewSync_ReloadAfterCalc[]. N values
+            if all(word in line for word in COEViewSync_RACVariables):
+                parts = line.split()
+                COEViewSync_ReloadAfterCalc.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
+        # print(COEViewSync_ReloadAfterCalc)
+
+
+            # Gives out a list of TViewSyncRequestHandler_ProcessRequest value/runtime per iteration.
+            # Output: TViewSyncRequestHandler_ProcessRequest[]. N values
+            if all(word in line for word in TViewSyncRequestHandler_PRVariables):
+                parts = line.split()
+                TViewSyncRequestHandler_ProcessRequest.append(int(re.findall('\d+', parts[parts.__len__() - 1])[0]))
+        # print(TViewSyncRequestHandler_ProcessRequest)
+
 
             # Gives out a list containing all client names along with total runtime.
             # Output: ClientNameAndTotalRunTime[2]. 1st value is ClientName, 2nd value is TotalClientRunTime
@@ -136,4 +180,4 @@ def logToInfo(logFile):
         # print(ClientName, TotalClientRunTime)
 
 
-logToInfo("LogFileDOEPrint.log")
+logToInfo("LacerteMockAppPerfData-ViewSync-DOE-042617122534.log")

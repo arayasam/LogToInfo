@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 (http://www.altova.com) by Tim Johnson (INTUIT INC) -->
+<LacerteMockAppConfig xsi:noNamespaceSchemaLocation="LacerteMockApp.Config.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MockAppSettings>
+    <ClientFiles_Path>C:\clients\large</ClientFiles_Path>
+    <ClientFiles>
+    </ClientFiles>
+    <Base_Output_Path>C:\Intuit\MockAppData\LacMockOutput</Base_Output_Path>
+    <TaxContent_Path>C:\16Tax</TaxContent_Path>
+    <TaxYear>2016</TaxYear>
+    <Module>I</Module>
+    <Engine_Path>C:\16Tax</Engine_Path>
+    <MachineName>plnapdas101.corp.intuit.nety</MachineName>
+    <DeviceID>f71027aaa62d0f86d899016bab2a05e68700dd5e</DeviceID>
+    <Temp_Path>C:\Temp\MockData</Temp_Path>
+    <Java_Bridge>LSCATE</Java_Bridge>
+	<WarmupEngine>True</WarmupEngine>
+    <Number_Of_Client_Iterations>12</Number_Of_Client_Iterations>
+  </MockAppSettings>
+  <Firms>
+    <FirmInfo>
+      <Prep>0</Prep>
+      <Virgin>0</Virgin>
+      <Cust>10100</Cust>
+      <FirmName>Lacerte Testing Account</FirmName>
+      <FedID>77-0034661</FedID>
+      <StreetAddr>5601 Headquarters</StreetAddr>
+      <City>Plano</City>
+      <State>TX</State>
+      <ZIP>75024</ZIP>
+      <Phone>214-387-2000</Phone>
+      <Fax>214-387-2001</Fax>
+      <EMail />
+      <EFIN>752536</EFIN>
+      <EROContactID>1</EROContactID>
+      <EROFirmOverride Active="false">
+        <EROFirmName>Lacerte Testing Account</EROFirmName>
+        <EROStreetAddress>5601 Headquarters</EROStreetAddress>
+        <EROCity>Plano</EROCity>
+        <EROState>TX</EROState>
+        <EROZip>75024</EROZip>
+        <EROPhone>214-387-2000</EROPhone>
+        <EROFedID />
+      </EROFirmOverride>
+      <MachID>AA</MachID>
+      <EFDirectFiling>false</EFDirectFiling>
+    </FirmInfo>
+    <FirmInfo>
+      <Prep>0</Prep>
+      <Virgin>0</Virgin>
+      <Cust>8827</Cust>
+      <FirmName>Lacerte Engineering REP Account</FirmName>
+      <FedID>77-0034661</FedID>
+      <StreetAddr>5601 Headquarters</StreetAddr>
+      <City>Plano</City>
+      <State>TX</State>
+      <ZIP>75024</ZIP>
+      <Phone>214-387-2675</Phone>
+      <Fax>214-387-2001</Fax>
+      <EMail />
+      <EFIN>752536</EFIN>
+      <EROContactID>1</EROContactID>
+      <EROFirmOverride Active="false">
+        <EROFirmName>Lacerte Testing Account</EROFirmName>
+        <EROStreetAddress>5601 Headquarters</EROStreetAddress>
+        <EROCity>Plano</EROCity>
+        <EROState>TX</EROState>
+        <EROZip>75024</EROZip>
+        <EROPhone>214-387-2000</EROPhone>
+        <EROFedID />
+      </EROFirmOverride>
+      <MachID>TJ</MachID>
+      <EFDirectFiling>false</EFDirectFiling>
+    </FirmInfo>
+  </Firms>
+  <Preparers>
+    <Preparer>
+      <Name>Stephen Sosbee</Name>
+      <SSN>222-22-2221</SSN>
+      <SelfEmployed>false</SelfEmployed>
+      <CAFNum />
+      <Designation>0</Designation>
+      <EnrollmentID />
+      <License />
+      <TPIN>P12345671</TPIN>
+      <ERO_Pin>12345</ERO_Pin>
+      <Phone> 214-387-2004</Phone>
+      <DesigneePIN />
+      <Email>Stephen_Sosbee@intuit.com</Email>
+      <NYTPRIN>12345678</NYTPRIN>
+      <IndUSEFWaiverNum />
+      <IndUSEFWaiverDate />
+      <FidUSEFWaiverNum />
+      <FidUSEFWaiverDate />
+      <NYExemptType />
+    </Preparer>
+    <Preparer>
+      <Name>Brian Hasz</Name>
+      <SSN>222-22-2222</SSN>
+      <SelfEmployed>false</SelfEmployed>
+      <CAFNum />
+      <Designation>0</Designation>
+      <EnrollmentID />
+      <License />
+      <TPIN>P12345672</TPIN>
+      <ERO_Pin>12345</ERO_Pin>
+      <Phone> 214-387-2940</Phone>
+      <DesigneePIN />
+      <Email>Brian_Hasz@intuit.com</Email>
+      <NYTPRIN>12345678</NYTPRIN>
+      <IndUSEFWaiverNum />
+      <IndUSEFWaiverDate />
+      <FidUSEFWaiverNum />
+      <FidUSEFWaiverDate />
+      <NYExemptType />
+    </Preparer>
+    <Preparer>
+      <Name>David Flores</Name>
+      <SSN>222-22-2223</SSN>
+      <SelfEmployed>false</SelfEmployed>
+      <CAFNum />
+      <Designation>0</Designation>
+      <EnrollmentID />
+      <License />
+      <TPIN>P12345673</TPIN>
+      <ERO_Pin>12345</ERO_Pin>
+      <Phone> 214-387-2715</Phone>
+      <DesigneePIN />
+      <Email>David_Flores@intuit.com</Email>
+      <NYTPRIN>12345678</NYTPRIN>
+      <IndUSEFWaiverNum />
+      <IndUSEFWaiverDate />
+      <FidUSEFWaiverNum />
+      <FidUSEFWaiverDate />
+      <NYExemptType />
+    </Preparer>
+    <Preparer>
+      <Name>David Herklotz</Name>
+      <SSN>222-22-2224</SSN>
+      <SelfEmployed>false</SelfEmployed>
+      <CAFNum />
+      <Designation>0</Designation>
+      <EnrollmentID />
+      <License />
+      <TPIN>P12345674</TPIN>
+      <ERO_Pin>12345</ERO_Pin>
+      <Phone> 214-387-2938</Phone>
+      <DesigneePIN />
+      <Email>David_Herklotz@intuit.com</Email>
+      <NYTPRIN>12345678</NYTPRIN>
+      <IndUSEFWaiverNum />
+      <IndUSEFWaiverDate />
+      <FidUSEFWaiverNum />
+      <FidUSEFWaiverDate />
+      <NYExemptType />
+    </Preparer>
+    <Preparer>
+      <Name>Roberto Pineda</Name>
+      <SSN>222-22-2225</SSN>
+      <SelfEmployed>false</SelfEmployed>
+      <CAFNum />
+      <Designation>0</Designation>
+      <EnrollmentID />
+      <License />
+      <TPIN>P12345675</TPIN>
+      <ERO_Pin>12345</ERO_Pin>
+      <Phone> 214-387-2446</Phone>
+      <DesigneePIN />
+      <Email>Roberto_Pineda@intuit.com</Email>
+      <NYTPRIN>12345678</NYTPRIN>
+      <IndUSEFWaiverNum />
+      <IndUSEFWaiverDate />
+      <FidUSEFWaiverNum />
+      <FidUSEFWaiverDate />
+      <NYExemptType />
+    </Preparer>
+  </Preparers>
+  <ConfigSetting />
+  <Options>
+    <Option_File>c:\16tax\OPTION16\opt001.w6</Option_File>
+    <IND>
+      <Option ID="6" Value="1" />
+      <Option ID="31" Value="0" />
+    </IND>
+    <PAR />
+    <COR />
+    <SCO />
+    <FID />
+    <EST>
+      <Option ID="6" Value="1" />
+      <Option ID="31" Value="0" />
+    </EST>
+    <EXM />
+    <GFT />
+    <BFT />
+    <GLO />
+  </Options>
+  <StandardPrintTypes>
+    <StandardPrintType>
+      <Module>I</Module>
+      <Section id="8">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="303">
+        <Item>
+          <Name>Electronic Filing</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+      <Section id="313">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="403">
+        <Item>
+          <Name>e-File Forms Only</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+    <StandardPrintType>
+      <Module>P</Module>
+      <Section id="66">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="316">
+        <Item>
+          <Name>Electronic Filing</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+      <Section id="317">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="62">
+        <Item>
+          <Name>Addtl K1 Package</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="403">
+        <Item>
+          <Name>e-File Forms Only</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+    <StandardPrintType>
+      <Module>C</Module>
+      <Section id="100">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="378">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="457">
+        <Item>
+          <Name>Electronic Filing</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+      <Section id="460">
+        <Item>
+          <Name>e-File Forms Only</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+    <StandardPrintType>
+      <Module>S</Module>
+      <Section id="155">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="151">
+        <Item>
+          <Name>Addtl K1 Package</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="320">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="458">
+        <Item>
+          <Name>Electronic Filing</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+      <Section id="461">
+        <Item>
+          <Name>e-File Forms Only</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+    <StandardPrintType>
+      <Module>F</Module>
+      <Section id="206">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="200">
+        <Item>
+          <Name>Addtl K1 Package</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="376">
+        <Item>
+          <Name>Grantor Package</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="315">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="459">
+        <Item>
+          <Name>Electronic Filing</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+      <Section id="462">
+        <Item>
+          <Name>e-File Forms Only</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+    <StandardPrintType>
+      <Module>R</Module>
+      <Section id="259">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="379">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="484">
+        <Item>
+          <Name>Electronic Filing</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+      <Section id="485">
+        <Item>
+          <Name>e-File Forms Only</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+    <StandardPrintType>
+      <Module>T</Module>
+      <Section id="273">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="380">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+    <StandardPrintType>
+      <Module>N</Module>
+      <Section id="287">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="520">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+    <StandardPrintType>
+      <Module>B</Module>
+      <Section id="398">
+        <Item>
+          <Name>Preparer Review</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Preparer File</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Client</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Government</Name>
+          <Value>0</Value>
+        </Item>
+        <Item>
+          <Name>Custom</Name>
+          <Value>1</Value>
+        </Item>
+      </Section>
+      <Section id="401">
+        <Item>
+          <Name>Electronic Filing</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+      <Section id="440">
+        <Item>
+          <Name>Participant Package</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="400">
+        <Item>
+          <Name>Extensions Only</Name>
+          <Value>0</Value>
+        </Item>
+      </Section>
+      <Section id="403">
+        <Item>
+          <Name>e-File Forms Only</Name>
+          <Value>2</Value>
+        </Item>
+      </Section>
+    </StandardPrintType>
+  </StandardPrintTypes>
+  <ClientSettings />
+  <OutputRequests>
+    <OutputRequest>
+  <Type>VIEWSYNC</Type>
+    <Data/>
+      <AdditionalData>
+        <DataItem Name="IncludeSet">StateAndFormsList,PageRender,StatementDoc,JumpToInputInfo,LinkFields,NonLinkFields</DataItem>
+      </AdditionalData>
+</OutputRequest>
+  </OutputRequests>
+</LacerteMockAppConfig>
