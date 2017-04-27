@@ -35,7 +35,7 @@ def logToInfo(logFile):
     EFReturn_ExecuteRequests=[]     #Done #NeedsTesting
     ExtOnlyPrint_ExecuteRequests=[]     #Done #NeedsTesting
     PartialPrint_ExecuteRequests=[]     #Done #NeedsTesting
-    SubClientPackagePrint_ExecuteRequests=[]     #Done #NeedsTesting
+    SubClientPackagePrint_ExecuteRequests=[]     #Done #NeedsTesting #just to commit
     TViewSyncRequestHandler_ProcessRequest=[]
     COEViewSync_ReloadAfterCalc=[]
     ClientNameAndTotalRunTime = []
