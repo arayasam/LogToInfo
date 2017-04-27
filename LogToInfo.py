@@ -24,26 +24,22 @@ def logToInfo(logFile):
     FileName=None #Done
     FileTimestamp=None #Done
     ClientName=None  #Done
+    Client=None   #Total time that is sum of client iterations
     ClientIterations=[]       #Done
     RequestType=[]       #Done
     ProcessOutputReqTime = None   #Done  # column name is ProcessOutputRequest
     FEngine_CreateCalcOutput=[]   #Done
     FCalc_Calculate=[]            #Done
     EFRequest_ExecuteRequests=[] #Done
-    EFReturn_ExecuteRequests=[]     #Inprogress
-    ExtOnlyPrint_ExecuteRequests=None
-    PartialPrint_ExecuteRequests=None
     StandardPrint_ExecuteRequests=[]        # Done
-    SubClientPackagePrint_ExecuteRequests=None
+    EFReturn_ExecuteRequests=[]     #Done #NeedsTesting
+    ExtOnlyPrint_ExecuteRequests=[]     #Done #NeedsTesting
+    PartialPrint_ExecuteRequests=[]     #Done #NeedsTesting
+    SubClientPackagePrint_ExecuteRequests=[]     #Done #NeedsTesting
     TViewSyncRequestHandler_ProcessRequest=[]
     COEViewSync_ReloadAfterCalc=[]
     ClientNameAndTotalRunTime = []
 
-    # ColumnName=FEngine.CreateCalcOutput;
-    # ElapseTime(ms)=0;
-
-    # ColumnName=TViewSyncRequestHandler.ProcessRequest; ElapseTime(ms)=
-    # COEViewSync.ReloadAfterCalc
 
     #matching lines based on patterns/substrings in the line.
     totalTimeVariables=['ColumnName=ClientIterations','Iteration','ElapseTime']
