@@ -1,0 +1,540 @@
+{
+  "id": "IAL240",
+  "topic": "",
+  "views": [
+    {
+      "id": "series-240-OSIScreen1",
+      "type": "questionAnswer",
+      "title": {
+        "asset": {
+          "type": "proText",
+          "id": "series-240-OSIScreen1-title",
+          "value": "AL Mod (51.401) Series=240"
+        }
+      },
+      "fields": {
+        "asset": {
+          "type": "proFieldCollection",
+          "id": "series-240-OSIScreen1-sections",
+          "values": [
+            {
+              "asset": {
+                "type": "proFieldCollection",
+                "id": "series-240-OSIScreen1-OSISection1",
+                "metaData": {
+                  "role": "section"
+                },
+                "values": [
+                  {
+                    "asset": {
+                      "type": "proFieldCollection",
+                      "id": "series-240-OSIScreen1-OSISection1-OSIGroup2",
+                      "metaData": {
+                        "role": "group"
+                      },
+                      "values": [
+                        {
+                          "asset": {
+                            "type": "proInput",
+                            "id": "series-240-OSIScreen1-OSISection1-OSIGroup2-OSIEdit8",
+                            "binding": "ind.detail.s240.general.c1.x[1].amt",
+                            "label": {
+                              "asset": {
+                                "type": "proText",
+                                "id": "series-240-OSIScreen1-OSISection1-OSIGroup2-OSIText9",
+                                "value": "Self ${[O]}"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "asset": {
+                            "type": "proInput",
+                            "id": "series-240-OSIScreen1-OSISection1-OSIGroup2-OSIEdit9",
+                            "binding": "ind.detail.s240.general.c2.x[1].amt",
+                            "label": {
+                              "asset": {
+                                "type": "proText",
+                                "id": "series-240-OSIScreen1-OSISection1-OSIGroup2-OSIText8",
+                                "value": "Spouse ${[O]}"
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-OSIGroup2-label",
+                          "value": "Alabama IRA Deduction"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection1-OSIEdit3",
+                      "binding": "ind.detail.s240.general.c3.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-OSIText3",
+                          "value": "Alabama - Keogh and SEP deduction ${[O]}"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection1-OSIEdit4",
+                      "binding": "ind.detail.s240.general.c4.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-OSIText4",
+                          "value": "Adoption expenses"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection1-OSIEdit10",
+                      "binding": "ind.detail.s240.general.c10.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-OSIText10",
+                          "value": "Health insurance deduction for small employer employee"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection1-OSIEdit5",
+                      "binding": "ind.detail.s240.general.c5.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-OSIText5",
+                          "value": "Alabama casualty losses (Schedule A) ${[O]}"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection1-OSIEdit7",
+                      "binding": "ind.detail.s240.general.c7.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-OSIText7",
+                          "value": "Payments to AL College Counts 529 Fund or AL PACT Program"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection1-OSIEdit1",
+                      "binding": "ind.detail.s240.general.c11.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-OSIText1",
+                          "value": "Costs to retrofit or upgrade home to resist wind or flood damage"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection1-OSIEdit14",
+                      "binding": "ind.detail.s240.general.c15.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-OSIText14",
+                          "value": "Contributions to Catastrophe Savings Account (no limit applied: press F1)"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "label": {
+                  "asset": {
+                    "type": "proComposite",
+                    "id": "series-240-OSIScreen1-OSISection1-label",
+                    "values": [
+                      {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-label-composite-caption",
+                          "value": "Adjustments to Income"
+                        }
+                      },
+                      {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection1-label-composite-link",
+                          "modifiers": [
+                            {
+                              "type": "link",
+                              "metaData": {
+                                "ref": "http://accountants.intuit.com/support/tax/lacerte/document.jsp?product=LACERTE_TAX&id=INF29984&inproduct=true&src=lscosi"
+                              }
+                            }
+                          ],
+                          "value": "Frequently Asked Questions"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "asset": {
+                "type": "proFieldCollection",
+                "id": "series-240-OSIScreen1-OSISection2",
+                "metaData": {
+                  "role": "section"
+                },
+                "values": [
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection2-OSIEdit2",
+                      "binding": "ind.detail.s240.general.c21.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection2-OSIText2",
+                          "value": "Federal tax liability from federal return ${[O]}"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "asset": {
+                      "type": "proInput",
+                      "id": "series-240-OSIScreen1-OSISection2-OSIEdit12",
+                      "binding": "ind.detail.s240.general.c22.x[1].amt",
+                      "label": {
+                        "asset": {
+                          "type": "proText",
+                          "id": "series-240-OSIScreen1-OSISection2-OSIText12",
+                          "value": "Federal tax liability from federal return (nonresidents and part-year residents only) [O]"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "label": {
+                  "asset": {
+                    "type": "proText",
+                    "id": "series-240-OSIScreen1-OSISection2-label",
+                    "value": "Deductions (Federal Tax Worksheet)"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "navigation": {
+    "BEGIN": "Flow",
+    "Flow": {
+      "startState": "VIEW_page",
+      "END_done": {
+        "state_type": "END",
+        "outcome": "doneWithFlow"
+      },
+      "END_back": {
+        "state_type": "END",
+        "outcome": "BACK"
+      },
+      "VIEW_page": {
+        "state_type": "VIEW",
+        "ref": "series-240-OSIScreen1",
+        "transitions": {
+          "Prev": "END_back",
+          "Next": "END_done"
+        }
+      }
+    }
+  },
+  "schema": {
+    "xType12": {
+      "amt": {
+        "type": "DetailAmount_-999999999_999999999_Precision_0_Type"
+      }
+    },
+    "c1Type2": {
+      "x": {
+        "metaData": {
+          "groupId": "xType12",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType12"
+      }
+    },
+    "xType13": {
+      "amt": {
+        "type": "DetailAmount_-999999999_999999999_Precision_0_Type"
+      }
+    },
+    "c2Type2": {
+      "x": {
+        "metaData": {
+          "groupId": "xType13",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType13"
+      }
+    },
+    "xType14": {
+      "amt": {
+        "type": "DetailAmount_-999999999_999999999_Precision_0_Type"
+      }
+    },
+    "c3Type1": {
+      "x": {
+        "metaData": {
+          "groupId": "xType14",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType14"
+      }
+    },
+    "xType15": {
+      "amt": {
+        "type": "DetailAmount_-999999999_999999999_Precision_0_Type"
+      }
+    },
+    "c4Type": {
+      "x": {
+        "metaData": {
+          "groupId": "xType15",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType15"
+      }
+    },
+    "xType16": {
+      "amt": {
+        "type": "DetailAmount_-999999999_999999999_Precision_0_Type"
+      }
+    },
+    "c5Type": {
+      "x": {
+        "metaData": {
+          "groupId": "xType16",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType16"
+      }
+    },
+    "xType17": {
+      "amt": {
+        "type": "DetailAmount_-1_999999999_Precision_0_Type"
+      }
+    },
+    "c7Type1": {
+      "x": {
+        "metaData": {
+          "groupId": "xType17",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType17"
+      }
+    },
+    "xType18": {
+      "amt": {
+        "type": "DetailAmount_-999999999_999999999_Precision_0_Type"
+      }
+    },
+    "c10Type": {
+      "x": {
+        "metaData": {
+          "groupId": "xType18",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType18"
+      }
+    },
+    "xType19": {
+      "amt": {
+        "type": "DetailAmount_-999999999_999999999_Precision_0_Type"
+      }
+    },
+    "c11Type": {
+      "x": {
+        "metaData": {
+          "groupId": "xType19",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType19"
+      }
+    },
+    "xType20": {
+      "amt": {
+        "type": "DetailAmount_-999999999_999999999_Precision_0_Type"
+      }
+    },
+    "c15Type": {
+      "x": {
+        "metaData": {
+          "groupId": "xType20",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType20"
+      }
+    },
+    "xType21": {
+      "amt": {
+        "type": "DetailAmount_-1_999999999_Precision_0_Type"
+      }
+    },
+    "c21Type": {
+      "x": {
+        "metaData": {
+          "groupId": "xType21",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType21"
+      }
+    },
+    "xType22": {
+      "amt": {
+        "type": "DetailAmount_-1_999999999_Precision_0_Type"
+      }
+    },
+    "c22Type": {
+      "x": {
+        "metaData": {
+          "groupId": "xType22",
+          "multiCopy": "true",
+          "maxCopies": "20"
+        },
+        "type": "xType22"
+      }
+    },
+    "generalType1": {
+      "c1": {
+        "type": "c1Type2"
+      },
+      "c2": {
+        "type": "c2Type2"
+      },
+      "c3": {
+        "type": "c3Type1"
+      },
+      "c4": {
+        "type": "c4Type"
+      },
+      "c5": {
+        "type": "c5Type"
+      },
+      "c7": {
+        "type": "c7Type1"
+      },
+      "c10": {
+        "type": "c10Type"
+      },
+      "c11": {
+        "type": "c11Type"
+      },
+      "c15": {
+        "type": "c15Type"
+      },
+      "c21": {
+        "type": "c21Type"
+      },
+      "c22": {
+        "type": "c22Type"
+      }
+    },
+    "s240Type": {
+      "general": {
+        "type": "generalType1"
+      }
+    },
+    "detailType": {
+      "s240": {
+        "type": "s240Type"
+      }
+    },
+    "ROOT": {
+      "ind": {
+        "type": "indType"
+      }
+    },
+    "indType": {
+      "detail": {
+        "type": "detailType"
+      }
+    }
+  },
+  "types": {
+    "DetailAmount_-999999999_999999999_Precision_0_Type": {
+      "validation": [
+        {
+          "type": "formattedNumber"
+        },
+        {
+          "type": "min",
+          "param": "-999,999,999"
+        },
+        {
+          "type": "max",
+          "param": "999,999,999"
+        }
+      ],
+      "format": {
+        "type": "commaNumber",
+        "precision": "0"
+      }
+    },
+    "DetailAmount_-1_999999999_Precision_0_Type": {
+      "validation": [
+        {
+          "type": "formattedNumber"
+        },
+        {
+          "type": "min",
+          "param": "-1"
+        },
+        {
+          "type": "max",
+          "param": "999,999,999"
+        }
+      ],
+      "format": {
+        "type": "commaNumber",
+        "precision": "0"
+      }
+    }
+  }
+}

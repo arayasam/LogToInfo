@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LogToInfo.iml" filepath="$PROJECT_DIR$/.idea/LogToInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dataLoad/.idea/dataLoad.iml" filepath="$PROJECT_DIR$/../dataLoad/.idea/dataLoad.iml" />
     </modules>
   </component>
 </project>

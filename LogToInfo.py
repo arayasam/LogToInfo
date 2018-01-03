@@ -82,6 +82,9 @@ def logToInfo(logFile):
 #        print(*ListOfIterations, sep='\n')
 #        print(*firstAndLastLine, sep='\n')
 
+# matches Codes="23" Code="+\d+"
+
+
 
 #**************************** Need to process the two lists produced above for the following functions
 
